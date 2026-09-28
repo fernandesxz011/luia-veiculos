@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seminovos selecionados em Vargem Grande Paulista. Consulte preços, simule financiamento e fale direto com a Luia Veículos.">
+  <meta name="theme-color" content="#0a0b0c">
+  <title>Luia Veículos | Seminovos em Vargem Grande Paulista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo-luia.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Luia Veículos início">
+      <img src="assets/logo-luia.png" alt="Luia Veículos">
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#estoque">Estoque</a>
+      <a href="#financiamento">Financiamento</a>
+      <a href="#venda">Venda seu carro</a>
+      <a href="#loja">A loja</a>
+    </nav>
+    <a class="header-cta" href="https://wa.me/5511932382008?text=Olá%2C%20vim%20pelo%20novo%20site%20da%20Luia%20Veículos." target="_blank" rel="noopener">Falar no WhatsApp <span>↗</span></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="assets/hero-showroom.webp" alt="Sedã preto e SUV branco em um showroom moderno">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> Vargem Grande Paulista</p>
+        <h1>Seu próximo carro<br><em>está aqui.</em></h1>
+        <p class="hero-copy">Seminovos selecionados, procedência verificada e negociação transparente do primeiro clique até a entrega das chaves.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#estoque">Ver estoque <span>↓</span></a>
+          <a class="button ghost" href="#financiamento">Simular financiamento</a>
+        </div>
+      </div>
+      <div class="trust-strip">
+        <div><strong>41</strong><span>veículos disponíveis</span></div>
+        <div><strong>10+</strong><span>bancos parceiros</span></div>
+        <div><strong>100%</strong><span>procedência verificada</span></div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Buscar veículos">
+      <label class="search-field"><span>O que você procura?</span><input id="searchInput" type="search" placeholder="Ex.: SUV automático" autocomplete="off"></label>
+      <label><span>Marca</span><select id="brandFilter"><option value="">Todas</option><option>Fiat</option><option>Honda</option><option>Volkswagen</option></select></label>
+      <label><span>Até quanto?</span><select id="priceFilter"><option value="999999">Qualquer valor</option><option value="90000">R$ 90 mil</option><option value="120000">R$ 120 mil</option><option value="150000">R$ 150 mil</option></select></label>
+      <button id="searchButton" class="search-button">Buscar veículos <span>→</span></button>
+    </section>
+
+    <section class="inventory section" id="estoque">
+      <div class="section-head">
+        <div><p class="eyebrow dark"><span></span> Destaques da semana</p><h2>Escolha sem adivinhar.</h2></div>
+        <p>Preço, parcela estimada e informações importantes já na vitrine.</p>
+      </div>
+      <div class="chips" aria-label="Filtrar por categoria">
+        <button class="chip active" data-type="all">Todos</button>
+        <button class="chip" data-type="SUV">SUV</button>
+        <button class="chip" data-type="Sedã">Sedã</button>
+        <button class="chip" data-type="Automático">Automáticos</button>
+      </div>
+      <div class="vehicle-grid" id="vehicleGrid">
+        <article class="vehicle-card" data-brand="Fiat" data-type="SUV Automático" data-price="112900" data-search="fiat pulse drive 1.3 suv automatico branco 2025">
+          <div class="vehicle-photo"><div role="img" aria-label="Foto do Fiat Pulse indisponível" style="display:grid;place-items:center;width:100%;height:100%;min-height:190px;background:#e7e7e7;color:#333;font-size:1rem">Foto indisponível</div><span class="tag">Garantia de fábrica</span><button class="favorite" aria-label="Favoritar Fiat Pulse">♡</button></div>
+          <div class="vehicle-info"><p>Fiat</p><h3>Pulse Drive 1.3</h3><div class="specs"><span>2024/25</span><span>29.800 km</span><span>Automático</span></div><div class="price"><span>A partir de</span><strong>R$ 112.900</strong><small>ou R$ 1.849/mês*</small></div><button class="vehicle-cta" data-car="Fiat Pulse Drive 1.3 2025">Tenho interesse <span>↗</span></button></div>
+        </article>
+        <article class="vehicle-card" data-brand="Honda" data-type="Sedã Automático" data-price="139900" data-search="honda city ex 1.5 seda automatico cinza 2025">
+          <div class="vehicle-photo"><img src="assets/honda-city.webp" alt="Honda City cinza"><span class="tag">Único dono</span><button class="favorite" aria-label="Favoritar Honda City">♡</button></div>
+          <div class="vehicle-info"><p>Honda</p><h3>City Sedan EX 1.5</h3><div class="specs"><span>2024/25</span><span>11.270 km</span><span>Automático</span></div><div class="price"><span>A partir de</span><strong>R$ 139.900</strong><small>ou R$ 2.271/mês*</small></div><button class="vehicle-cta" data-car="Honda City Sedan EX 1.5 2025">Tenho interesse <span>↗</span></button></div>
+        </article>
+        <article class="vehicle-card" data-brand="Volkswagen" data-type="SUV Automático" data-price="149900" data-search="volkswagen t-cross highline 1.4 suv automatico preto 2026">
+          <div class="vehicle-photo"><img src="assets/tcross.webp" alt="Volkswagen T-Cross preto"><span class="tag">Baixa km</span><button class="favorite" aria-label="Favoritar Volkswagen T-Cross">♡</button></div>
+          <div class="vehicle-info"><p>Volkswagen</p><h3>T-Cross Highline 1.4</h3><div class="specs"><span>2025/26</span><span>37.808 km</span><span>Automático</span></div><div class="price"><span>A partir de</span><strong>R$ 149.900</strong><small>ou R$ 2.429/mês*</small></div><button class="vehicle-cta" data-car="Volkswagen T-Cross Highline 2026">Tenho interesse <span>↗</span></button></div>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden><strong>Nenhum carro encontrado.</strong><span>Tente alterar a marca, o valor ou o termo da busca.</span></div>
+      <div class="inventory-footer"><button class="button outline" id="showAll">Limpar filtros</button><small>*Simulação ilustrativa. Condições sujeitas à análise de crédito.</small></div>
+    </section>
+
+    <section class="finance section" id="financiamento">
+      <div class="finance-copy"><p class="eyebrow"><span></span> Simulação rápida</p><h2>Descubra a parcela<br>antes de falar com a gente.</h2><p>Monte uma estimativa em poucos segundos. Depois, nossa equipe busca a melhor condição entre os bancos parceiros.</p><ul><li>Resposta rápida no WhatsApp</li><li>Entrada e prazo ajustáveis</li><li>Sem compromisso</li></ul></div>
+      <form class="calculator" id="financeForm">
+        <div class="calc-head"><span>Simulador</span><span class="status"><i></i> Online</span></div>
+        <label>Valor do veículo <div class="money-input"><span>R$</span><input id="carValue" type="number" value="112900" min="20000" step="1000"></div></label>
+        <label>Entrada <div class="range-row"><strong id="downLabel">R$ 30.000</strong><span id="downPercent">27%</span></div><input id="downPayment" type="range" min="0" max="80000" step="1000" value="30000"></label>
+        <label>Prazo <div class="term-buttons"><button type="button" data-term="36">36x</button><button type="button" data-term="48" class="active">48x</button><button type="button" data-term="60">60x</button></div></label>
+        <div class="calc-result"><span>Parcela estimada</span><strong id="monthlyPayment">R$ 2.297</strong><small>em 48 meses</small></div>
+        <button class="button primary full" type="submit">Receber proposta no WhatsApp <span>↗</span></button>
+      </form>
+    </section>
+
+    <section class="sell section" id="venda">
+      <div><p class="eyebrow dark"><span></span> Compramos seu carro</p><h2>Venda hoje.<br>Receba à vista.</h2><p>Informe os dados básicos e receba uma pré-avaliação da equipe Luia.</p></div>
+      <form id="sellForm" class="sell-form"><label><span>Seu veículo</span><input id="sellCar" required placeholder="Ex.: Civic EXL 2020"></label><label><span>Quilometragem</span><input id="sellKm" required type="number" placeholder="Ex.: 65.000"></label><label><span>Seu WhatsApp</span><input id="sellPhone" required inputmode="tel" placeholder="(11) 99999-9999"></label><button class="button dark-button" type="submit">Quero uma avaliação <span>→</span></button></form>
+    </section>
+
+    <section class="location section" id="loja">
+      <div class="location-card"><p class="eyebrow"><span></span> Visite a Luia</p><h2>Seu próximo carro<br>mais perto de você.</h2><address>Av. Presidente Tancredo Neves, 80<br>Jardim Floresta, Vargem Grande Paulista - SP</address><div class="hours"><span>Seg a sex <strong>9h às 18h</strong></span><span>Sábado <strong>9h às 14h</strong></span></div><a class="button primary" href="https://maps.google.com/?q=Luia+Veiculos+Vargem+Grande+Paulista" target="_blank" rel="noopener">Abrir no mapa <span>↗</span></a></div>
+      <div class="map-art" aria-hidden="true"><div class="road r1"></div><div class="road r2"></div><div class="road r3"></div><span class="pin">L</span><span class="map-label">Jardim Floresta</span></div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><img src="assets/logo-luia.png" alt="Luia Veículos"></div><p>Seminovos com procedência em Vargem Grande Paulista.</p><div class="footer-links"><a href="#estoque">Estoque</a><a href="#financiamento">Financie</a><a href="#venda">Venda seu carro</a></div><div class="footer-contact"><a href="tel:+551141581778">(11) 4158-1778</a><a href="mailto:contato@luiaveiculos.com.br">contato@luiaveiculos.com.br</a></div><div class="footer-bottom"><span>© 2026 Luia Veículos</span><span>Condições sujeitas a alteração.</span></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
